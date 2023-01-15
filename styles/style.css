@@ -1,0 +1,387 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+/* body{
+    display: flex;
+    flex-direction: column;
+} */
+
+/* Navbar */
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 0 10%;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+.menu a{
+    text-decoration: none;
+    padding-left: 30px;
+    color: rgba(66, 66, 66, 1);
+
+}
+.nav-title{
+    justify-content: flex-start;
+}
+/* Bannner */
+.banner{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 10px 0 60px 0 ;
+}
+.banner-picture img{
+    width: 100%;
+    padding-bottom: 50px;
+}
+.banner-title{
+    font-size: 65px;
+    width: 70%;
+    font-weight: 700;
+    text-align: center;
+    padding: 40px 0px;
+}
+.banner-description{
+    font-size: 16px;
+    text-align: center ;
+    width: 70%;
+    padding-bottom: 40px;
+    line-height: 30px;
+}
+.banner-button button{
+    padding: 21px 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 144, 14, 1);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.banner-button button:hover{
+   animation: sliding 1s ease 0.2s infinite alternate;
+}
+@keyframes sliding {
+
+    to{
+        transform: translate(0px,-10px);
+    }
+}
+/* Page 2 Section */
+.page-2{
+    margin: 0 10%;
+    margin-bottom: 100px;
+    
+}
+.page2-conatiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 80px;
+    padding: 0 5%;
+}
+.page2-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.page2-images img{
+    width: 300px;
+    height: 300px;
+  
+}
+.page2-text .title{
+    font-size: 45px;
+    font-weight: 300;
+    color: rgba(114, 114, 114, 1);
+    margin-bottom: 20px;
+}
+.page2-text .description{
+    line-height: 26px;
+    margin-bottom: 20px ;
+}
+
+/* Page 3 Section */
+.page-3{
+    margin: 0 10%;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
+    align-items: center;    
+}
+
+.page3-image{
+    width: 100%;
+}
+.page-3 .image-part{
+    background-image: url("../images/architect.png");
+    width: 600px;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page3-image button{
+   padding: 50px 75px;
+   position: relative;
+   bottom: 50px;
+   right: 50px;
+   background-color: orange;
+   color: white;
+   border: none;
+   font-size: 30px;
+}
+
+.page3-text-description .title{
+    border-left: 4px solid orange;
+    padding-left: 10px;
+    font-size: 45px;
+    font-weight: 700;
+}
+.page3-text-description .description{
+    padding: 24px 0px;
+    line-height: 26px;
+    font-size: 16px;
+}
+ .box-container .box{
+    line-height: 30px;
+    padding: 25px;
+    box-shadow: -3px 1px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+/* Some Facts Section */
+.some-facts{
+    padding: 0 10%;
+}
+
+.someFactsContainer{
+    margin: 70px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    grid-gap: 50px;
+}
+
+.someFactsContainer .box{
+    border: 1px solid orange;
+    text-align: center;
+    padding: 20px 0px;
+    margin-right: 40px;
+    border-radius: 5px;
+
+}
+.someFactsContainer .box p{
+font-size: 16px;
+ line-height: 26px; 
+ color: rgba(114, 114, 114, 1);
+}
+.someFactsContainer .box h2{
+     color: rgba(66, 66, 66, 1) ;
+}
+
+.someFactsContainer .box:hover{
+    animation: boxAnimation 1s ease 0.2s infinite alternate;
+ }
+ @keyframes boxAnimation {
+    0%{
+        transform: translate(0px,0px);
+    }
+    50%{
+        transform: translate(0px,-10px);
+    }
+     /* 75%{
+         transform: translate(0px,0px);
+     } */
+     100%{
+        transform: translate(0px,10px);
+    }
+ }
+
+ /* Our Sponsor Section */
+ .our-sponsors{
+    padding: 0 10%;
+ }
+ .our-sponsors p{
+    text-align: center;
+    line-height: 36px;
+ }
+
+ .ourSponsorContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+    padding-left: 10%;
+ }
+
+ .ourSponsorContainer img{
+    width: 40%;
+    filter: grayscale(100%);
+ }
+
+/* Contact Us Section */
+ input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+  }
+  
+ 
+  input[type=submit] {
+    background-color: rgba(255, 144, 14, 1);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+  input[type=submit]:hover {
+    background-color: rgba(254, 168, 69, 0.99);
+  }
+  
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 30px;
+    margin: 0 10%;
+    margin-bottom: 50px;
+  }
+
+ footer{
+    margin: 0 20%;
+    padding: 20px 10%;
+    font-size: 16px;
+    color: rgba(66, 66, 66, 1) ;
+    text-align: center;
+    background-color: rgba(255, 244, 231, 1);
+    margin-bottom: 50px;
+    font-weight: 400;
+    
+ }
+
+ @media screen and (max-width:576px) {
+    .page2-conatiner{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        grid-gap: 80px;
+        padding: 0 5%;
+    }
+    .page2-images{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+    .page-3{
+        margin: 0 5%;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+        align-items: center;    
+        
+    }
+    .page3-image{
+        width: 80%;
+    }
+    .page-3 .image-part{
+        background-image: url("../images/architect.png");
+        width: 350px;
+        height: 350px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .page3-image button{
+       padding: 20px 25px;
+       background-color: orange;
+       color: white;
+       border: none;
+       font-size: 15px;
+       margin-left: 150px;
+       margin-top: 60px;
+    }
+    .someFactsContainer{
+        margin: 70px 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 50px;
+        justify-content: space-between;
+        grid-gap: 50px;
+    }
+    .banner-title{
+        font-size: 50px;
+        width: 70%;
+        font-weight: 700;
+        text-align: center;
+        padding: 40px 0px;
+    }
+    .page3-text-description .title{
+    
+        font-size: 35px;
+     
+    }
+    .page3-text-description .description{
+        padding: 24px 0px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+     .box-container .box{
+        line-height: 30px;
+        padding: 25px;
+        box-shadow: -3px 1px 15px rgba(0, 0, 0, 0.3);
+        margin-bottom: 20px;
+    }
+    .ourSponsorContainer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        grid-gap: 20px;
+        margin-bottom: 100px;
+        padding-left: 10%;
+     }
+     .nav-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .menu a{
+        text-decoration: none;
+        padding-top: 30px;
+        padding-right: 30px;
+        color: rgba(66, 66, 66, 1);
+    
+    }
+
+ }
+  
